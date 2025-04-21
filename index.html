@@ -10,6 +10,9 @@
   <meta name="author" content="Kry Sobothty">
   <meta name="robots" content="index, follow">
   <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>The Code</title>
 </head>
 
@@ -21,6 +24,9 @@
           <img src="/assets/img/the-code.png" alt="logo" class="logo-img">
         </a>
       </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
       <nav class="navbar">
         <ul>
           <li><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
@@ -31,16 +37,19 @@
     </div>
   </header>
   <main>
-    <section>
+    <section class="section-hero">
       <div class="hero-section">
         <div class="hero-content">
           <div class="title">
             <p>Blog Plateform</p>
           </div>
-          <h1 class="h1-text">Welcome to <span>< THE CODE ></span></h1>
+          <h1 class="h1-text">Welcome to <span>
+              < THE CODE>
+            </span></h1>
           <p class="description">Your one-stop solution for coding tutorials and resources.</p>
+          <p class="description-thecode">The code is blog platform that create by HTML developer in cambodia</p>
           <div class="hero-buttons">
-            <a href="https://www.youtube.com/" class="btn">View Resource</a>
+            <a href="https://www.youtube.com/" id="hero-buttons-resource" class="btn">View Resource</a>
             <a href="https://www.google.com/" class="btn">Get Started</a>
           </div>
         </div>
@@ -50,7 +59,65 @@
           <img src="./assets/img/hero image.png" alt="Hero Image" class="hero-img">
         </div>
     </section>
+    <section class="section-All-Blog">
+      <h2>All Blogs</h2>
+      <div class="All-Blog-Container">
+        <article class="blog-card">
+          <div class="Blog-image-container">
+            <img src="./assets/img/1hourhtml.png" alt="Blog 1" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <h3>HTML in 1hour</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat nec ligula facilisis tincidunt.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+        </article>
+        <article class="blog-card">
+          <div class="Blog-image-container">
+            <img src="./assets/img/cyber.png" alt="Blog 1" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <h3>Cyber Security in 1hour</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat nec ligula facilisis tincidunt.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+        </article>
+        <article class="blog-card">
+          <div class="Blog-image-container">
+            <img src="./assets/img/devops.png" alt="Blog 1" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <h3>DevOps Engineer in 1hour</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat nec ligula facilisis tincidunt.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+
+        </article>
+        <article class="blog-card">
+          <div class="Blog-image-container">
+            <img src="./assets/img/html-thumbnail.png" alt="Blog 1" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <h3>HTML life time </h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut erat nec ligula facilisis tincidunt.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </article>
+      </div>
+    </section>
   </main>
+  <script>
+    function toggleMenu() {
+      document.querySelector('.navbar').classList.toggle('active');
+    }
+  </script>
+
 </body>
 
 </html>
