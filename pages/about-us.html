@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
-    <link rel="stylesheet" href="/assets/css/about.css">
+    <link rel="stylesheet" href="/assets/css/aboutUs.css">
     <meta name="description" content="Learn more about our company and team.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="/" class="logo">
+                    <img src="/assets/img/the-code.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="/pages/about-us.html"><i class="fa-solid fa-users"></i>About</a></li>
+                    <li><a href="/pages/contact.html"><i class="fa-solid fa-phone"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="image-section">
+                    <img src="/assets/img/profile.jpg" alt="About Us" class="about-image">
+                </div>
+                <div class="content-section">
+                    <div>
+                        <h1>ABOUT ME</h1>
+                        <h2>KRY SOBOTHTY - HTML DEVELOPER</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#">Be</a>
+                        <a href="#">⚪</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📷</a>
+                        <a href="#">In</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../assets/img/the-code.png" alt="logo">
+            </div>
+            <p>&copy; 2025 The Code. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script>
+        function toggleMenu() {
+          document.querySelector('.navbar').classList.toggle('active');
+        }
+      </script>
 </body>
+
 </html>
