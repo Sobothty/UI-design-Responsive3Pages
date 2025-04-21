@@ -50,17 +50,15 @@
           <p class="description-thecode">The code is blog platform that create by HTML developer in cambodia</p>
           <div class="hero-buttons">
             <a href="https://www.youtube.com/" id="hero-buttons-resource" class="btn">View Resource</a>
-            <a href="https://www.google.com/" class="btn">Get Started</a>
+            <a href="https://www.google.com/" class="btn-getstart">Get Started</a>
           </div>
         </div>
         <div class="hero-image">
-          <div class="hero-image-background">
-          </div>
           <img src="./assets/img/hero image.png" alt="Hero Image" class="hero-img">
         </div>
     </section>
     <section class="section-All-Blog">
-      <h2>All Blogs</h2>
+      <h2 class="all-blog-title">All Blogs</h2>
       <div class="All-Blog-Container">
         <article class="blog-card">
           <div class="Blog-image-container">
@@ -111,7 +109,43 @@
         </article>
       </div>
     </section>
+    <section class="section-aboutme">
+      <div class="about-container">
+        <div class="about-text">
+          <div class="label">ISTAD STUDENT</div>
+          <h1>Kry Sobothty</h1>
+          <h3>Student at ISTAD</h3>
+          <p>
+            I'm currently studying web development at ISTAD with a strong passion for frontend technologies and modern
+            web tools. I enjoy creating beautiful and responsive web apps and always eager to learn new things in tech.
+          </p>
+          <button>Learn More About Me</button>
+        </div>
+        <div class="about-image">
+          <img src="./assets/img/profile.jpg" alt="Kry Sobothty" />
+          <div class="tags">
+            <span class="tag">HTML Developer</span>
+            <span class="tag">CSS Developer</span>
+            <span class="tag">C++ Developer</span>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="./assets/img/the-code.png" alt="logo">
+      </div>
+      <p>&copy; 2025 The Code. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
   <script>
     function toggleMenu() {
       document.querySelector('.navbar').classList.toggle('active');
